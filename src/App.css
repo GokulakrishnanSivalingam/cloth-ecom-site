@@ -126,6 +126,76 @@
                                         height: 300px;
                                     }
                                     
+                                    .color button {
+                                        margin: 4px;
+                                        color: black;
+                                        border: 1px solid grey;
+                                        font-size: 15px;
+                                        padding: 10px;
+                                        background-color: white;
+                                        border-radius: 5px;
+                                    }
+                                    
+                                    .color,
+                                    .size {
+                                        margin: 5px;
+                                    }
+                                    
+                                    .size button {
+                                        margin: 4px;
+                                        color: black;
+                                        border: 1px solid grey;
+                                        font-size: 12px;
+                                        border-radius: 20px;
+                                        background-color: white;
+                                        padding: 8px;
+                                    }
+                                    
+                                    h2 {
+                                        margin: 5px;
+                                        margin-left: 5px;
+                                        color: grey;
+                                        font-size: 16px;
+                                    }
+                                    
+                                    p {
+                                        margin-left: 15px;
+                                        color: grey;
+                                    }
+                                    
+                                    .addr {
+                                        display: flex;
+                                        margin-top: 20px;
+                                    }
+                                    
+                                    .buy-price p {
+                                        font-size: 23px;
+                                    }
+                                    
+                                    .addr input {
+                                        width: 80%;
+                                        border: none;
+                                        height: 40px;
+                                        text-decoration: double;
+                                        color: black;
+                                        background-color: rgb(226, 229, 232);
+                                        outline: none;
+                                        margin-left: 10px;
+                                        padding: 6px;
+                                    }
+                                    
+                                    .addr button {
+                                        background-color: white;
+                                        width: 70px;
+                                        border: 1px solid grey;
+                                    }
+                                    
+                                    .buy-price h3 {
+                                        color: green;
+                                        font-size: 23px;
+                                        margin-left: 10px;
+                                    }
+                                    
                                     @media (max-width: 768px) {
                                         .nav-links {
                                             display: none;
@@ -186,7 +256,7 @@
                                             margin-left: 0;
                                             margin-right: 0;
                                             margin-bottom: 2px;
-                                            width: 150px;
+                                            width: 145px;
                                             height: 200px;
                                             border-radius: 4px;
                                         }
@@ -196,5 +266,83 @@
                                             height: 290px;
                                             width: max-content;
                                             border-radius: 4px;
+                                        }
+                                        .buy-con img {
+                                            width: 90%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            margin-left: 15px;
+                                        }
+                                        .buy-con {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            margin-top: 70px;
+                                        }
+                                        .buy {
+                                            width: 100%;
+                                            margin-bottom: 0;
+                                            background-color: rgb(254, 249, 249);
+                                            padding: 10px;
+                                            margin-top: 10px;
+                                        }
+                                        .buy button {
+                                            width: 47%;
+                                            height: 45px;
+                                            background-color: rgb(244, 46, 79);
+                                            color: white;
+                                            border: none;
+                                            margin: 3px
+                                        }
+                                        .color button {
+                                            margin: 4px;
+                                            color: black;
+                                            border: 1px solid grey;
+                                            font-size: 15px;
+                                            padding: 10px;
+                                            background-color: white;
+                                            border-radius: 5px;
+                                        }
+                                        .color,
+                                        .size {
+                                            margin: 5px;
+                                            margin-left: 10px;
+                                        }
+                                        .size button {
+                                            margin: 4px;
+                                            color: black;
+                                            border: 1px solid grey;
+                                            font-size: 12px;
+                                            border-radius: 20px;
+                                            background-color: white;
+                                            padding: 8px;
+                                        }
+                                        h2 {
+                                            margin: 5px;
+                                            margin-left: 5px;
+                                            color: grey;
+                                            font-size: 16px;
+                                        }
+                                        p {
+                                            margin-left: 15px;
+                                            color: grey;
+                                        }
+                                        .addr {
+                                            display: flex;
+                                        }
+                                        .addr input {
+                                            width: 80%;
+                                            border: none;
+                                            height: 40px;
+                                            text-decoration: double;
+                                            color: black;
+                                            background-color: rgb(226, 229, 232);
+                                            outline: none;
+                                        }
+                                        .addr button {
+                                            background-color: white;
+                                            width: 70px;
+                                            border: 1px solid grey;
                                         }
                                     }

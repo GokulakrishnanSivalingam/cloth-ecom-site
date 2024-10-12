@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import Data from './Data.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {Link} from 'react-router-dom'
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
     
    {Data.map((shirt) => (
             <div key={shirt.id}className='shirt-con' data-aos="fade-down">
-              <img src={shirt.image} alt={shirt.name} />
+            <Link key={shirt.id} to={`/buy/${shirt.id}`}><img src={shirt.image} alt={shirt.name} /></Link>
               <p>{shirt.name}</p>
             
               <h3>Price: &#8377;{shirt.price}</h3>

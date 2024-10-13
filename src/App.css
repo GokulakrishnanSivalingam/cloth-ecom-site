@@ -196,6 +196,12 @@
                                         margin-left: 10px;
                                     }
                                     
+                                    button.selected {
+                                        border: none;
+                                        background-color: green;
+                                        color: white;
+                                    }
+                                    
                                     @media (max-width: 768px) {
                                         .nav-links {
                                             display: none;
@@ -344,5 +350,10 @@
                                             background-color: white;
                                             width: 70px;
                                             border: 1px solid grey;
+                                        }
+                                        button.selected {
+                                            border: none;
+                                            background-color: green;
+                                            color: white;
                                         }
                                     }

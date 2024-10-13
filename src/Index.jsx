@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import App from './App.jsx'
 import Buy from './Buy.jsx'
-
+import Pay from "./Pay.jsx"
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 
@@ -18,6 +18,7 @@ function Index() {
         
 <Route path='/' element={<App/>}/>
 <Route path='/buy/:id' element={<Buy/>}/>
+<Route path='/pay/:id' element={<Pay/>}/>
 
 
       </Routes>

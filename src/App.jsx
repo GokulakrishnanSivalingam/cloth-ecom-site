@@ -25,7 +25,7 @@ function App() {
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
      <li><a href="/">home</a></li>  
  <li><a href="mailto:sivalingamgokulakrishnan@gmail.com">contact</a></li>
-
+ <li><a href="">feedback</a></li>
         </ul>
       
         <div className="hamburger" onClick={toggleMenu}>

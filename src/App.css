@@ -21,6 +21,7 @@
                                     .logo {
                                         color: black;
                                         font-size: 24px;
+                                        font-family: "Playwrite DE Grund", cursive;
                                     }
                                     
                                     .nav-links {
@@ -166,10 +167,12 @@
                                     .addr {
                                         display: flex;
                                         margin-top: 20px;
+                                        font-family: "Playwrite DE Grund", cursive;
                                     }
                                     
                                     .buy-price p {
                                         font-size: 23px;
+                                        font-family: "Playwrite DE Grund", cursive;
                                     }
                                     
                                     .addr input {
@@ -182,24 +185,35 @@
                                         outline: none;
                                         margin-left: 10px;
                                         padding: 6px;
+                                        font-family: "Playwrite DE Grund", cursive;
                                     }
                                     
                                     .addr button {
-                                        background-color: white;
+                                        background-color: rgb(232, 226, 226);
                                         width: 70px;
-                                        border: 1px solid grey;
+                                        border: none;
+                                        font-family: "Playwrite DE Grund", cursive;
                                     }
                                     
                                     .buy-price h3 {
                                         color: green;
                                         font-size: 23px;
-                                        margin-left: 10px;
+                                        margin-left: 20px;
+                                        margin-top: -15px;
+                                        margin-bottom: 10px;
+                                        font-size: 24px;
+                                        font-family: "Playwrite DE Grund", cursive;
                                     }
                                     
                                     button.selected {
                                         border: none;
                                         background-color: green;
                                         color: white;
+                                    }
+                                    
+                                    .error-text {
+                                        color: red;
+                                        font-size: 13px;
                                     }
                                     
                                     @media (max-width: 768px) {
@@ -279,6 +293,7 @@
                                             align-items: center;
                                             justify-content: center;
                                             margin-left: 15px;
+                                            border-radius: 7px;
                                         }
                                         .buy-con {
                                             display: flex;
@@ -299,7 +314,8 @@
                                             background-color: rgb(244, 46, 79);
                                             color: white;
                                             border: none;
-                                            margin: 3px
+                                            margin: 3px;
+                                            border-radius: 2px;
                                         }
                                         .color button {
                                             margin: 4px;
@@ -347,13 +363,14 @@
                                             outline: none;
                                         }
                                         .addr button {
-                                            background-color: white;
+                                            background-color: rgb(199, 198, 198);
                                             width: 70px;
-                                            border: 1px solid grey;
+                                            border: none;
+                                            color: white
                                         }
                                         button.selected {
                                             border: none;
-                                            background-color: green;
+                                            background-color: rgb(87, 85, 85);
                                             color: white;
                                         }
                                     }

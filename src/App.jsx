@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 import Data from './Data.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
      <div className="logo"> Zee-Shirts</div> 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
      <li><a href="/">home</a></li>  
- <li><a href="">contact</a></li>
- <li><a href="">feedback</a></li>
+ <li><a href="mailto:sivalingamgokulakrishnan@gmail.com">contact</a></li>
+
         </ul>
       
         <div className="hamburger" onClick={toggleMenu}>
@@ -42,7 +42,7 @@ function App() {
             <Link key={shirt.id} to={`/buy/${shirt.id}`}><img src={shirt.image} alt={shirt.name} /></Link>
               <p>{shirt.name}</p>
             
-              <h3>Price: &#8377;{shirt.price}</h3>
+              <h3>&#8377;{shirt.price}</h3>
                 <span><FaStar/> {shirt.rating}</span>
             </div>
           ))}

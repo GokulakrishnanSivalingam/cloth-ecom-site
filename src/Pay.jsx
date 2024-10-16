@@ -19,14 +19,71 @@ function Pay() {
 
   useEffect(() => {
     document.body.style.width = '95vw';
+    document.body.style.backgroundColor = 'rgb(220, 216, 216)';
     return () => {
       document.body.style.width = '';
     };
   }, []);
-  const  handlesubmit =(e)=>{
-    e.preventdefault();
+ 
 
-}
+  const loadScript = (src) => {
+    return new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.onload = () => resolve(true);
+      script.onerror = () => resolve(false);
+      document.body.appendChild(script);
+    });
+  };
+
+  const displayRazorpay = async () => {
+    const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js');
+    if (!res) {
+      alert('payment failed, Are you online?');
+      return;
+    }
+
+    // Call the backend to create an order
+    const result = await fetch('http://localhost:5000/create-order', {
+      method: 'POST',
+      body: JSON.stringify({ amount: shirt.price *100 }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    const data = await result.json();
+    if (!data) {
+      alert('Server error. Are you online?');
+      return;
+    }
+
+    const options = {
+      key: 'rzp_test_XVmaUDhJseyPRW',
+      amount: data.amount, 
+      currency: data.currency,
+      name: shirt.name,
+      description: 'Test Transaction',
+      order_id: data.id, 
+      handler: function (response) {
+        alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+        alert(`Order ID: ${response.razorpay_order_id}`);
+        alert(`Signature: ${response.razorpay_signature}`);
+      },
+      prefill: {
+        name: 'Customer Name',
+        email: 'customer@example.com',
+        contact: '9999999999',
+      },
+      theme: {
+        color: '#3399cc',
+      },
+    };
+
+    const rzp1 = new window.Razorpay(options);
+    rzp1.open();
+  };
+
   return (
     <div>
       <nav className="navbar">
@@ -59,16 +116,16 @@ function Pay() {
         <p>Color: {selectedColor}</p>
         <p>Size: {selectedSize}</p>
       </div>
-     
+     <center>
         <div className="address">
-            <input type="text" placeholder='  Enter your state ' required/>
+            <input type="text" placeholder='  Enter your state ' value="Tamil nadu" required/>
          
-      <input type="text" placeholder='  Enter your pincode' required/>
+      <input type="text" placeholder='  Enter your city  (optional)' required/>
       
-        <input type="text" placeholder='  Enter your pincode'  maxLength={6} required/>
+        <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} required/>
         
         </div> 
-       <div className="buys"> <a href="https://razorpay.me/@gokulakrishnan620"><button  onClick={handlesubmit}> procced to pay</button></a></div>
+       <div className="buys"> <button  onClick={displayRazorpay}> procced to pay</button></div></center>
     </div>
   );
 }

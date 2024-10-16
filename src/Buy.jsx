@@ -137,13 +137,14 @@ function Buy() {
           placeholder="Enter address" 
           value={address} 
           onChange={(e) => setAddress(e.target.value)} 
+          required
         />
-        {error && <p className="error-text">{error}</p>}
-        <button     onClick={(e) => e.target.style.backgroundColor = 'lightgreen'}><HiOutlinePlusSm /></button>
+       
+        <button     onClick={(e) => e.target.style.backgroundColor = ' rgb(87, 85, 85)'}><HiOutlinePlusSm /></button>
       </div>
-
+      {error && <p className="error-text">{error}</p>}
       <div className="buy">
-        <button disabled={!selectedColor || !selectedSize || !address} onClick={validateAndNavigate}>
+        <button type="submit" disabled={!selectedColor || !selectedSize} onClick={validateAndNavigate}>
           Buy
         </button>
         <button>Add to Cart</button>

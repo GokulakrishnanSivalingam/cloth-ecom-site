@@ -120,7 +120,7 @@ function Pay() {
         <div className="address">
             <input type="text" placeholder='  Enter your state ' value="Tamil nadu" required/>
          
-      <input type="number" placeholder='  Enter your number  (optional)'  maxLength={6} required/>
+      <input type="text" placeholder='  Enter your number  (optional)'  maxLength={6} required/>
       
         <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} required/>
         

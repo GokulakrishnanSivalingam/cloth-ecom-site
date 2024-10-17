@@ -118,11 +118,11 @@ function Pay() {
       </div>
      <center>
         <div className="address">
-            <input type="text" placeholder='  Enter your state ' value="Tamil nadu" required/>
+            <input type="text" placeholder='  Enter your state ' value="Tamil nadu" />
          
-      <input type="text" placeholder='  Enter your number'  maxLength={6} required/>
+      <input type="text" placeholder='  Enter your number'  maxLength={6} />
       
-        <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} required/>
+        <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} />
         
         </div> 
        <div className="buys"> <button  onClick={displayRazorpay}> procced to pay</button></div></center>

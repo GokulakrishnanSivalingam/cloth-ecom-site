@@ -38,7 +38,7 @@ function App() {
 
     
    {Data.map((shirt) => (
-            <div key={shirt.id}className='shirt-con' data-aos="fade-down">
+            <div key={shirt.id}className='shirt-con' data-aos="fade-up">
             <Link key={shirt.id} to={`/buy/${shirt.id}`}><img src={shirt.image} alt={shirt.name} /></Link>
               <p>{shirt.name}</p>
             

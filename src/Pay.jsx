@@ -43,8 +43,8 @@ function Pay() {
       return;
     }
 
-    // Call the backend to create an order
-    const result = await fetch('http://localhost:5000/create-order', {
+    
+    const result = await fetch('https://cloth-ecom-site.onrender.com/create-order', {
       method: 'POST',
       body: JSON.stringify({ amount: shirt.price *100 }),
       headers: {

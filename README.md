@@ -11,8 +11,6 @@ An e-commerce platform(Zee shirts) built with React, Node.js, Express.js and Raz
 - 💳 Razorpay integration for payments
 - 📱 Responsive design for mobile and desktop
 
-## 📸 Screenshots
-![Portfolio Screenshot](./avs.png)
 
 
 ## 🛠️ Technologies Used

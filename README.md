@@ -22,7 +22,7 @@ An e-commerce platform(Zee shirts) built with React, Node.js, Express.js and Raz
 - **Database**: ![MongoDB](https://img.shields.io/badge/MongoDB-4.4-brightgreen.svg)
 - **Payment Gateway**: ![Razorpay](https://img.shields.io/badge/Razorpay-Payments-blue.svg)
 - **Styling**: ![CSS](https://img.shields.io/badge/CSS-3-blue.svg)
-- 
+  
 - ## 📊 Language & Repo Stats
 
 ![Top Language](https://img.shields.io/github/languages/top/GokulakrishnanSivalingam/cloth-ecom-site)

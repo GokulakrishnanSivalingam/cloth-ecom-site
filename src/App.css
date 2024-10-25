@@ -194,6 +194,12 @@
                                         border: none;
                                         font-family: "Playwrite DE Grund", cursive;
                                     }
+                                    .addr button:hover {
+                                            color: rgb(199, 198, 198);
+                                            width: 70px;
+                                            border: none;
+                                           background-color: white;
+                                        }
                                     
                                     .buy-price h3 {
                                         color: green;

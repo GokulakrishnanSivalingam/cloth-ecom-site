@@ -221,6 +221,20 @@
                                         color: red;
                                         font-size: 13px;
                                     }
+                                     .buy button {
+                                            width: 47%;
+                                            height: 45px;
+                                            background-color: rgb(244, 46, 79);
+                                            color: white;
+                                            border: none;
+                                            margin: 3px;
+                                            border-radius: 2px;
+                                        }
+                                      .buy button{
+                                        border:3px solid rgb(244, 46, 79);
+                                        background-color:white;
+                                        color:rgb(244, 46, 79);
+                                      }
                                     
                                     @media (max-width: 768px) {
                                         .nav-links {
@@ -323,6 +337,11 @@
                                             margin: 3px;
                                             border-radius: 2px;
                                         }
+                                      .buy button{
+                                        border:3px solid rgb(244, 46, 79);
+                                        background-color:white;
+                                        color:rgb(244, 46, 79);
+                                      }
                                         .color button {
                                             margin: 4px;
                                             color: black;

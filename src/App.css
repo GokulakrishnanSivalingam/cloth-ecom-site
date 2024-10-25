@@ -230,7 +230,7 @@
                                             margin: 3px;
                                             border-radius: 2px;
                                         }
-                                      .buy button{
+                                      .buy button:hover{
                                         border:3px solid rgb(244, 46, 79);
                                         background-color:white;
                                         color:rgb(244, 46, 79);
@@ -337,8 +337,8 @@
                                             margin: 3px;
                                             border-radius: 2px;
                                         }
-                                      .buy button{
-                                        border:3px solid rgb(244, 46, 79);
+                                      .buy button:hover{
+                                        border:2px solid rgb(244, 46, 79);
                                         background-color:white;
                                         color:rgb(244, 46, 79);
                                       }

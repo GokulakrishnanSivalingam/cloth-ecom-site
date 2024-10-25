@@ -1,15 +1,19 @@
 
+
 # E-commerce Site
 
-An e-commerce platform built with React, Node.js, and Razorpay for seamless online shopping and payment experiences.
+An e-commerce platform(Zee shirts) built with React, Node.js, Express.js and Razorpay.
 
 ## 🚀 Features
 
 - 🛍️ Product listing and filtering
 - 🛒 Shopping cart functionality
 - 💳 Razorpay integration for payments
-- 📦 Order history and tracking
 - 📱 Responsive design for mobile and desktop
+
+## 📸 Screenshots
+![Portfolio Screenshot](./avs.png)
+
 
 ## 🛠️ Technologies Used
 
@@ -18,6 +22,7 @@ An e-commerce platform built with React, Node.js, and Razorpay for seamless onli
 - **Database**: ![MongoDB](https://img.shields.io/badge/MongoDB-4.4-brightgreen.svg)
 - **Payment Gateway**: ![Razorpay](https://img.shields.io/badge/Razorpay-Payments-blue.svg)
 - **Styling**: ![CSS](https://img.shields.io/badge/CSS-3-blue.svg)
+- 
 - ## 📊 Language & Repo Stats
 
 ![Top Language](https://img.shields.io/github/languages/top/GokulakrishnanSivalingam/cloth-ecom-site)
@@ -28,26 +33,19 @@ An e-commerce platform built with React, Node.js, and Razorpay for seamless onli
 ![Issues](https://img.shields.io/github/issues/GokulakrishnanSivalingam/cloth-ecom-site)
 ![Pull Requests](https://img.shields.io/github/issues-pr/GokulakrishnanSivalingam/cloth-ecom-site)
  
-## Screenshot
-
-## 🖼️ Screenshots
-
-| Screenshot | Description |
-
-| ![Screenshot 1](/frontend/src/img/avs.png) | Home Page |
-
- 
-
 ## 📦 Installation
 
 To get the project running on your local machine:
 
 ```bash
 git clone https://github.com/yourusername/ecommerce-site.git
-cd ecommerce-site
+cd projectG
 npm install
 cd client
 npm install
+npm run dev
 cd server
+npm init -y
+npm i express mongoose razorpay 
 npm run dev
 ```

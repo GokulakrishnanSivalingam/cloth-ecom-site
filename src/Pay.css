@@ -74,3 +74,8 @@
        margin-bottom: 40px;
        border-radius: 2px;
    }
+.buys button:hover{
+         border:3px solid rgb(244, 46, 79);
+      background-color:white;
+       color:rgb(244, 46, 79);
+                                      }

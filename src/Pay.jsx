@@ -3,7 +3,7 @@ import './Pay.css';
 import Data from './Data.jsx';
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { useParams, useLocation } from 'react-router-dom';
-const dotenv = require('dotenv').config();
+
 
 function Pay() {
   const [isOpen, setIsOpen] = useState(false);

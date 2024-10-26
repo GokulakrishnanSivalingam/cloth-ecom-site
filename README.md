@@ -17,11 +17,10 @@ An e-commerce platform(Zee shirts) built with React, Node.js, Express.js and Raz
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: ![React](https://img.shields.io/badge/React-17.0.1-blue.svg)
-- **Backend**: ![Node.js](https://img.shields.io/badge/Node.js-14.17.5-green.svg) ![Express.js](https://img.shields.io/badge/Express.js-4.17.1-lightgrey.svg)
-- **Database**: ![MongoDB](https://img.shields.io/badge/MongoDB-4.4-brightgreen.svg)
-- **Payment Gateway**: ![Razorpay](https://img.shields.io/badge/Razorpay-Payments-blue.svg)
-- **Styling**: ![CSS](https://img.shields.io/badge/CSS-3-blue.svg)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)  ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) 
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 - 
 - ## 📊 Language & Repo Stats
 

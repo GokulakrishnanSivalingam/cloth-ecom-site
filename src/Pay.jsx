@@ -59,7 +59,7 @@ function Pay() {
     }
 
     const options = {
-      key: 'rzp_test_XVmaUDhJseyPRW',
+      key: process.env.key_id,
       amount: data.amount, 
       currency: data.currency,
       name: shirt.name,

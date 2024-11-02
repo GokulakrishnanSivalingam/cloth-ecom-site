@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './Buy.css';
 import Data from './Data.jsx';
 import { HiOutlinePlusSm } from "react-icons/hi";
 import { useParams, useNavigate } from 'react-router-dom';
@@ -46,7 +46,7 @@ function Buy() {
 
   return (
     <div>
-      <nav className="navbar">
+      <nav className="nav">
         <div className="logo"> Zee-Shirts</div> 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li><a href="/">home</a></li>  
@@ -59,15 +59,18 @@ function Buy() {
           <span className="bar"></span>
         </div>
       </nav>
-
+      <div className="maincon">
+<div className="con1">
       <div className="buy-con">
         <img src={shirt.image} alt={shirt.name} />
       </div>
-
+      </div>
+      <div className="con2">
       <div className="buy-price">
         <p>{shirt.name}</p>
         <h3>&#8377;{shirt.price}</h3>
       </div>
+      
 
       <div className="color">
         <h2>Color</h2>
@@ -148,6 +151,8 @@ function Buy() {
           Buy
         </button>
         <button>Add to Cart</button>
+        </div>
+      </div>
       </div>
     </div>
   );

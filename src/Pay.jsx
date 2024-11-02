@@ -22,7 +22,7 @@ function Pay() {
 
   useEffect(() => {
     document.body.style.width = '95vw';
-    document.body.style.backgroundColor = 'rgb(220, 216, 216)';
+
     return () => {
       document.body.style.width = '';
     };
@@ -105,7 +105,7 @@ let success =true;
 
   return (
     <div>
-      <nav className="navbar">
+      <nav className="nav">
         <div className="logo"> Zee-Shirts</div> 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           <li><a href="/">home</a></li>  
@@ -118,7 +118,7 @@ let success =true;
           <span className="bar"></span>
         </div> 
       </nav>
-
+<div className="pay-container">
       <div className="pay-con">
         <div className="pay-img">
           <img src={shirt.image} alt={shirt.name} />
@@ -134,16 +134,21 @@ let success =true;
         <p>Address: {address}</p>
         <p>Color: {selectedColor}</p>
         <p>Size: {selectedSize}</p>
-      </div>
+      </div></div>
      <center>
         <div className="address">
+        <div className="add-con1">
             <input type="text" placeholder='  Enter your state '  value={state} onChange={(e)=>setState(e.target.value)}/>
             <div className="error" align="left"> <p>{error}</p></div>  
       <input type="number" placeholder='  Enter your city  (optional)' value={number} onChange={(e)=>setNumber(e.target.value)}/>
+   <div className="error" align="left"> <p>{error}</p></div> </div>
+   <div className="add-con2">
+   <input type="email" placeholder='enter your email'  required/>
    <div className="error" align="left"> <p>{error}</p></div>  
         <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} required/>
+         <div className="error" align="left"> <p>{error}</p></div>  
         
-        </div> 
+        </div> </div>
        <div className="buys"> <button  onClick={displayRazorpay}> procced to pay</button></div></center>
     </div>
   );

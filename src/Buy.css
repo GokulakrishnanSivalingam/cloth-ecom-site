@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", san-serif;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    height: 40px;
+    box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: black;
+    font-size: 24px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 40px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.nav-links li a:hover {
+    background-color: greenyellow;
+    color: black;
+    padding: 7px 13px 7px 13px;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.login li {
+    border: 3px solid black;
+    color: white;
+    width: 70px;
+    border-radius: 6px;
+}
+
+.login li :hover {
+    background-color: black;
+    color: white;
+}
+
+.log a {
+    color: white;
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .shirt-con img {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 7px;
+    width: 200px;
+    height: 200px;
+}
+
+h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 7px;
+}
+
+.shirt-con p {
+    color: grey;
+    margin: 0;
+    font-size: 14px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+}
+
+.shirt-con span {
+    margin: 7px;
+    background-color: green;
+    padding: 7px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.container .shirt-con {
+    margin: 15px;
+    width: 200px;
+    box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+.color button {
+    margin: 4px;
+    color: black;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.color,
+.size {
+    margin: 5px;
+}
+
+.size button {
+    margin: 4px;
+    color: black;
+    border: 1px solid grey;
+    font-size: 12px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 8px;
+}
+
+h2 {
+    margin: 5px;
+    margin-left: 5px;
+    color: grey;
+    font-size: 16px;
+}
+
+p {
+    margin-left: 15px;
+    color: grey;
+}
+
+.addr {
+    display: flex;
+    margin-top: 20px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.buy-price p {
+    font-size: 23px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.addr input {
+    width: 80%;
+    border: none;
+    height: 40px;
+    text-decoration: double;
+    color: black;
+    background-color: rgb(226, 229, 232);
+    outline: none;
+    margin-left: 10px;
+    padding: 6px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.addr button {
+    background-color: rgb(232, 226, 226);
+    width: 70px;
+    border: none;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+.buy-price h3 {
+    color: green;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: "Playwrite DE Grund", cursive;
+}
+
+button.selected {
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+.error-text {
+    color: red;
+    font-size: 13px;
+}
+
+.cart {
+    display: none;
+}
+
+.buy button:hover {
+    border: 1px solid rgb(244, 46, 79);
+    background-color: white;
+    color: rgb(244, 46, 79);
+    border-radius: 5px;
+}
+
+.buy button {
+    width: 47%;
+    height: 45px;
+    background-color: rgb(244, 46, 79);
+    color: white;
+    border: none;
+    margin: 3px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.maincon {
+    display: flex;
+}
+
+.con1 {
+    margin-right: 80px;
+    margin: 55px;
+}
+
+.con2 {
+    margin-left: 80px;
+    margin: 50px;
+    width: 120%;
+}
+
+.buy-con img {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 7px;
+    height: 420px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgb(240, 238, 238);
+        position: fixed;
+        z-index: 1000;
+        overflow: hidden;
+        transition: 0.4s;
+        margin-top: 0;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 25px;
+    }
+    .nav-links li a:hover {
+        background-color: white;
+        color: black;
+        width: 100%;
+        padding: 10px;
+    }
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 2001;
+        margin-right: 32px;
+    }
+    .login {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .container .shirt-con img {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2px;
+        width: 145px;
+        height: 200px;
+        border-radius: 4px;
+    }
+    .container .shirt-con {
+        margin: 15px;
+        box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.3);
+        height: 290px;
+        width: max-content;
+        border-radius: 4px;
+    }
+    .cart {
+        display: flex;
+        margin-left: 110px;
+        font-size: 25px;
+    }
+    .buy-con img {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        border-radius: 7px;
+        height: 350px;
+        margin-top: -40px;
+    }
+    .buy-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    .buy {
+        width: 100%;
+        margin-bottom: 0;
+        background-color: rgb(254, 249, 249);
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .buy button {
+        width: 47%;
+        height: 45px;
+        background-color: rgb(244, 46, 79);
+        color: white;
+        border: none;
+        margin: 3px;
+        border-radius: 2px;
+    }
+    .color button {
+        margin: 4px;
+        color: black;
+        border: 1px solid grey;
+        font-size: 15px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .color,
+    .size {
+        margin: 5px;
+        margin-left: 10px;
+    }
+    .size button {
+        margin: 4px;
+        color: black;
+        border: 1px solid grey;
+        font-size: 12px;
+        border-radius: 20px;
+        background-color: white;
+        padding: 8px;
+    }
+    h2 {
+        margin: 5px;
+        margin-left: 5px;
+        color: grey;
+        font-size: 16px;
+    }
+    p {
+        margin-left: 15px;
+        color: grey;
+    }
+    .addr {
+        display: flex;
+    }
+    .addr input {
+        width: 80%;
+        border: none;
+        height: 40px;
+        text-decoration: double;
+        color: black;
+        background-color: rgb(226, 229, 232);
+        outline: none;
+    }
+    .addr button {
+        background-color: rgb(199, 198, 198);
+        width: 70px;
+        border: none;
+        color: white
+    }
+    button.selected {
+        border: none;
+        background-color: rgb(87, 85, 85);
+        color: white;
+    }
+    .maincon {
+        display: block;
+    }
+    .con1,
+    .con2 {
+        margin: 0;
+        width: 100%;
+    }
+}

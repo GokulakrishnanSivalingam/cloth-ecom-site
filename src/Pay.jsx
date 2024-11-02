@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './Pay.css';
 import Data from './Data.jsx';
-import { HiOutlinePlusSm } from "react-icons/hi";
+
 import { useParams, useLocation } from 'react-router-dom';
 
 function Pay() {
   const [isOpen, setIsOpen] = useState(false);
   const { id } = useParams(); 
+  const[state,setState]=useState("");
+  const[number,setNumber]=useState("");
+  const[error,setError]=useState('');
   const location = useLocation(); 
   const shirt = Data.find(shirt => shirt.id === parseInt(id));
 
@@ -36,7 +39,22 @@ function Pay() {
     });
   };
 
-  const displayRazorpay = async () => {
+  const displayRazorpay = async (e) => {
+    e.preventDefault();
+let success =true;
+    if(state==='' || number==='')
+    {
+      setError("please fill the field");
+      success=false;
+    }
+    else if(number>10 && number <10)
+    {
+      setError("please enter valid number");
+      success=false;
+    }
+    else{
+      success=true;
+    }
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js');
     if (!res) {
       alert('payment failed, Are you online?');
@@ -73,7 +91,7 @@ function Pay() {
       prefill: {
         name: 'Customer Name',
         email: 'customer@example.com',
-        contact: '9999999999',
+        contact: {number},
       },
       theme: {
         color: '#3399cc',
@@ -82,6 +100,7 @@ function Pay() {
 
     const rzp1 = new window.Razorpay(options);
     rzp1.open();
+    
   };
 
   return (
@@ -118,10 +137,10 @@ function Pay() {
       </div>
      <center>
         <div className="address">
-            <input type="text" placeholder='  Enter your state ' value="Tamil nadu" required/>
-         
-      <input type="text" placeholder='  Enter your city  (optional)' required/>
-      
+            <input type="text" placeholder='  Enter your state '  value={state} onChange={(e)=>setState(e.target.value)}/>
+            <div className="error" align="left"> <p>{error}</p></div>  
+      <input type="number" placeholder='  Enter your city  (optional)' value={number} onChange={(e)=>setNumber(e.target.value)}/>
+   <div className="error" align="left"> <p>{error}</p></div>  
         <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} required/>
         
         </div> 

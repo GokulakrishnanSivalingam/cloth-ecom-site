@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import Data from './Data.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaCartShopping } from "react-icons/fa6";
 import {Link} from 'react-router-dom';
 
 
@@ -27,12 +28,15 @@ function App() {
  <li><a href="mailto:sivalingamgokulakrishnan@gmail.com">contact</a></li>
  <li><a href="">feedback</a></li>
         </ul>
-      
+        <div className="cart"> <FaCartShopping/></div>
         <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
+          
         </div>
+      
+        
       </nav>
       <div className="container">
 

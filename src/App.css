@@ -216,6 +216,10 @@
                                         font-size: 13px;
                                     }
                                     
+                                    .cart {
+                                        display: none;
+                                    }
+                                    
                                     @media (max-width: 768px) {
                                         .nav-links {
                                             display: none;
@@ -258,7 +262,7 @@
                                             display: flex;
                                             position: relative;
                                             z-index: 2001;
-                                            margin-right: 52px;
+                                            margin-right: 32px;
                                         }
                                         .login {
                                             display: none;
@@ -286,6 +290,11 @@
                                             height: 290px;
                                             width: max-content;
                                             border-radius: 4px;
+                                        }
+                                        .cart {
+                                            display: flex;
+                                            margin-left: 110px;
+                                            font-size: 25px;
                                         }
                                         .buy-con img {
                                             width: 90%;

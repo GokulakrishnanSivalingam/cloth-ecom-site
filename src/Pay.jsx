@@ -9,7 +9,10 @@ function Pay() {
   const { id } = useParams(); 
   const[state,setState]=useState("");
   const[number,setNumber]=useState("");
+  const[email,setEmail]=useStates("");
   const[error,setError]=useState('');
+   const[numerror,setNumerror]=useState('');
+  
   const location = useLocation(); 
   const shirt = Data.find(shirt => shirt.id === parseInt(id));
 
@@ -42,19 +45,20 @@ function Pay() {
   const displayRazorpay = async (e) => {
     e.preventDefault();
 let success =true;
-    if(state==='' || number==='')
+    if(state==='' || number==='' || email==='');
     {
       setError("please fill the field");
       success=false;
     }
-    else if(number>10 && number <10)
+    else if(number!=10)
     {
-      setError("please enter valid number");
+      setNumerror("please enter 10 digit number");
       success=false;
     }
     else{
       success=true;
     }
+    return success;
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js');
     if (!res) {
       alert('payment failed, Are you online?');
@@ -89,8 +93,8 @@ let success =true;
         alert(`Signature: ${response.razorpay_signature}`);
       },
       prefill: {
-        name: 'Customer Name',
-        email: 'customer@example.com',
+        name: `${state}`,
+        email: `${email}`,
         contact: `${number}`,
       },
       theme: {
@@ -138,12 +142,12 @@ let success =true;
      <center>
         <div className="address">
         <div className="add-con1">
-            <input type="text" placeholder='  Enter your state '  value={state} onChange={(e)=>setState(e.target.value)}/>
+            <input type="text" placeholder='  Enter your name '  value={state} onChange={(e)=>setState(e.target.value)}/>
             <div className="error" align="left"> <p>{error}</p></div>  
-      <input type="number" placeholder='  Enter your phone number' value={number} onChange={(e)=>setNumber(e.target.value)}/>
-   <div className="error" align="left"> <p>{error}</p></div> </div>
+      <input type="number" placeholder='  Enter your phone number' value=`+91 ${number}` onChange={(e)=>setNumber(e.target.value)}/>
+   <div className="error" align="left"> <p>{numerror}</p></div> </div>
    <div className="add-con2">
-   <input type="email" placeholder='enter your email'  required/>
+   <input type="email" placeholder='enter your email' value={email} onChange={(e)=>setEmail(e.target.value)}  required/>
    <div className="error" align="left"> <p>{error}</p></div>  
         <input type="text" placeholder='  Enter your pincode  (optional)'  maxLength={6} required/>
          <div className="error" align="left"> <p>{error}</p></div>  

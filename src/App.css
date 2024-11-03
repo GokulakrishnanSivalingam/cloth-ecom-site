@@ -92,6 +92,11 @@
                                                             width: 200px;
                                                             height: 200px;
                                                         }
+                                                 .container .shirt-con:hover{       
+                                                      width: 210px;
+                                                            height: 210px;
+                                                   transition:0.2s;
+                                                          }
                                                         
                                                         h3 {
                                                             margin: 0;

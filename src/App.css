@@ -95,8 +95,8 @@
                                                  .container .shirt-con:hover{       
                                                       
                                                           
-                                                        border:2px solid grey;
-                                                   border-radius:5px;
+                                                        border:1px solid grey;
+                                                   border-radius:4px;
                                                  }
                                                         h3 {
                                                             margin: 0;

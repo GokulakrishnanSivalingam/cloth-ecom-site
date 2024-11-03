@@ -6,13 +6,6 @@ import { useParams, useLocation } from 'react-router-dom';
 
 function Pay() {
   const [isOpen, setIsOpen] = useState(false);
-  const { id } = useParams(); import React, { useState, useEffect } from 'react';
-import './Pay.css';
-import Data from './Data.jsx';
-import { useParams, useLocation } from 'react-router-dom';
-
-function Pay() {
-  const [isOpen, setIsOpen] = useState(false);
   const { id } = useParams(); 
   const [state, setState] = useState("");
   const [number, setNumber] = useState("");

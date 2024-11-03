@@ -92,9 +92,9 @@
                                                             width: 200px;
                                                             height: 200px;
                                                         }
-                                                 .container .shirt-con:hover{       
-                                                      width: 210px;
-                                                            height: 210px;
+                                                 .container :hover{       
+                                                      width: 101%;
+                                                            height: 102%;
                                                    transition:0.2s;
                                                           }
                                                         

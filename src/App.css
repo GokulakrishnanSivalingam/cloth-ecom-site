@@ -92,12 +92,12 @@
                                                             width: 200px;
                                                             height: 200px;
                                                         }
-                                                 .container :hover{       
-                                                      width: 101%;
-                                                            height: 102%;
-                                                   transition:0.2s;
-                                                          }
-                                                        
+                                                 .container .shirt-con:hover{       
+                                                      
+                                                          
+                                                        border:2px solid grey;
+                                                   border-radius:5px;
+                                                 }
                                                         h3 {
                                                             margin: 0;
                                                             font-weight: bold;

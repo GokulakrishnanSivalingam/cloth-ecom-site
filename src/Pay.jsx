@@ -9,7 +9,7 @@ function Pay() {
   const { id } = useParams(); 
   const[state,setState]=useState("");
   const[number,setNumber]=useState("");
-  const[email,setEmail]=useStates("");
+  const[email,setEmail]=useState("");
   const[error,setError]=useState('');
    const[numerror,setNumerror]=useState('');
   
@@ -50,7 +50,7 @@ let success =true;
       setError("please fill the field");
       success=false;
     }
-    else if(number!=10)
+    else if(number.length!=10)
     {
       setNumerror("please enter 10 digit number");
       success=false;

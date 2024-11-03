@@ -130,6 +130,7 @@
                                                             width: 200px;
                                                             box-shadow: 5px 10px 8px 0px rgba(0, 0, 0, 0.1);
                                                             height: 300px;
+                                                          border-radius:4px;
                                                         }
                                                         
                                                         .color button {

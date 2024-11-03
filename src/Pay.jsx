@@ -91,7 +91,7 @@ let success =true;
       prefill: {
         name: 'Customer Name',
         email: 'customer@example.com',
-        contact: {number},
+        contact: `${number}`,
       },
       theme: {
         color: '#3399cc',
@@ -140,7 +140,7 @@ let success =true;
         <div className="add-con1">
             <input type="text" placeholder='  Enter your state '  value={state} onChange={(e)=>setState(e.target.value)}/>
             <div className="error" align="left"> <p>{error}</p></div>  
-      <input type="number" placeholder='  Enter your city  (optional)' value={number} onChange={(e)=>setNumber(e.target.value)}/>
+      <input type="number" placeholder='  Enter your phone number' value={number} onChange={(e)=>setNumber(e.target.value)}/>
    <div className="error" align="left"> <p>{error}</p></div> </div>
    <div className="add-con2">
    <input type="email" placeholder='enter your email'  required/>

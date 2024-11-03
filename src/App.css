@@ -95,9 +95,7 @@
                                                  .container .shirt-con:hover{       
                                                       
                                                           
-                                                     box-shadow: 0 0 5px 2px rgba(0, 255, 255, 0.4), 
-              0 0 10px 2px rgba(0, 255, 255, 0.3), 
-              0 0 15px 2px rgba(0, 255, 255, 0.2);
+                                                    border:1px solid grey;
                                                    border-radius:4px;
                                                  }
                                                         h3 {

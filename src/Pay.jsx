@@ -106,7 +106,7 @@ function Pay() {
         <input type="text" placeholder="Enter your name" value={state} onChange={(e) => setState(e.target.value)} />
         <div className="error"><p>{error}</p></div>
 
-        <input type="number" placeholder="Enter your phone number" value={number} onChange={(e) => setNumber(e.target.value)} />
+        <input type="number" placeholder="Enter your phone number" value=`91 ${number}` onChange={(e) => setNumber(e.target.value)} />
         <div className="error"><p>{numerror}</p></div>
 
         <input type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required />

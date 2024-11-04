@@ -169,7 +169,7 @@
             font-size: 15px;
         }
         .address input {
-            width: 94%;
+            width: 95%;
             height: 45px;
             border: 1px solid grey;
             margin-top: 10px;
@@ -177,7 +177,7 @@
             outline: skyblue;
             border-radius: 7px;
             margin: 3px;
-            margin-right:-10px;
+            margin-right:-12px;
          
         }
         .address {
@@ -185,7 +185,7 @@
             display: block;
         }
         .buys button {
-            width: 96%;
+            width: 98%;
             height: 45px;
             background-color: rgb(244, 46, 79);
             color: white;

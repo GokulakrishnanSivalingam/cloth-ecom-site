@@ -15,12 +15,12 @@ An e-commerce platform (**Zee Shirts**) built with **React**, **Node.js**, **Exp
 
 | Category       | Technology     | Badge                                                                 |
 |----------------|----------------|------------------------------------------------------------------------|
-| Frontend       | React          | ![React](https://img.shields.io/badge/React-2023-blue?logo=react)      |
-| Backend        | Node.js        | ![Node.js](https://img.shields.io/badge/Node.js-2023-green?logo=node.js) |
-| Backend        | Express.js     | ![Express](https://img.shields.io/badge/Express.js-Framework-lightgrey?logo=express) |
-| Database       | MongoDB        | ![MongoDB](https://img.shields.io/badge/MongoDB-NoSQL-brightgreen?logo=mongodb) |
-| Payment        | Razorpay       | ![Razorpay](https://img.shields.io/badge/Razorpay-API-blue?logo=razorpay) |
-| Styling        | CSS3           | ![CSS3](https://img.shields.io/badge/CSS3-Styling-blue?logo=css3)      |
+| Frontend       | React          | ![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=white&style=for-the-badge) |
+| Backend        | Node.js        | ![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?logo=nodedotjs&logoColor=white&style=for-the-badge) |
+| Backend        | Express.js     | ![Express](https://img.shields.io/badge/Backend-Express.js-000000?logo=express&logoColor=white&style=for-the-badge) |
+| Database       | MongoDB        | ![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge) |
+| Payment        | Razorpay       | ![Razorpay](https://img.shields.io/badge/Payment-Razorpay-02042B?logo=razorpay&logoColor=white&style=for-the-badge) |
+| Styling        | CSS3           | ![CSS3](https://img.shields.io/badge/Style-CSS3-264DE4?logo=css3&logoColor=white&style=for-the-badge) |
 
 ---
 

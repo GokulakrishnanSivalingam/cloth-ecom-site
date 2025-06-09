@@ -31,7 +31,7 @@ app.post('/create-order', async(req, res) => {
 
 // Payment verification route (this is your provided code)
 app.post('/verify-payment', (req, res) => {
-    const secret = 'hhaPmwqXCRIPEKGdhaP12bpA';
+    const secret = 'twJUiWuFJ03BvrqFudraihA5';
 
     const shasum = crypto.createHmac('sha256', secret);
     shasum.update(req.body.razorpay_order_id + "|" + req.body.razorpay_payment_id);
